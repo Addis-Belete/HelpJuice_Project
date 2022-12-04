@@ -1,4 +1,8 @@
+import NavBar from "./components/NavBar"
 export default function () {
 
-	return <div>Hello World</div>
+	return (<div>
+		<NavBar />
+
+	</div>)
 }
