@@ -1,0 +1,49 @@
+.div {
+  margin-top: 20px;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #a0a6b1;
+  border-radius: 5px;
+  height: 40px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.div div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.div  span {
+  padding-left: 15px;
+padding-right: 15px;
+}
+.div div ul {
+  list-style: none;
+  display: flex;
+	margin-left: -20px;
+}
+.div  ul {
+  list-style: none;
+  display: flex;
+}
+
+.div ul li {
+  padding-right: 20px;
+  text-transform: capitalize;
+}
+.p {
+  background: #d9f9e6;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: #347659;
+  font-weight: 500;
+  margin-left: 15px;
+  border-radius: 3px;
+}
