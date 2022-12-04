@@ -1,8 +1,85 @@
-.card{
-margin-left: 27.5%;
-width: 250px;
-height: 300px;
-background: #ffffff;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.card {
+  margin-left: 27.5%;
+  width: 270px;
+  height: 300px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #e6e7eb;
+  border-radius: 5px;
+}
 
+.topCard {
+  padding-left: 10px;
+  position: relative;
+}
+
+.topCard h5 {
+  color: #232830;
+}
+
+.topCard h5 span {
+  text-transform: capitalize;
+  display: inline;
+  font-size: inherit;
+  position: inherit;
+  color: inherit;
+}
+
+.topCard span {
+  font-size: 10px;
+  margin-top: 0;
+  position: absolute;
+  top: 20px;
+  color: #9fa5b0;
+}
+
+.topCard p {
+  font-size: 10px;
+  padding-top: 10px;
+  color: #6f7582;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.topCard p span {
+  position: inherit;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  width: 10px;
+  height: 15px;
+  background-color: #3565a9;
+  margin-left: 5px;
+  color: white;
+}
+
+.bottomCard > div:hover {
+  background: #f3f4f6;
+}
+.bottomCard h1 {
+  padding-top: 0;
+  text-transform: capitalize;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-left: 15px;
+}
+.bottomCard > div {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  padding-top: -20px;
+}
+.bottomCard div div {
+  padding-left: 15px;
+}
+.bottomCard div div h5 {
+  color: #232830;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+.bottomCard div div p {
+  color: #9fa5b0;
+  margin-top: -20px;
 }
