@@ -6,7 +6,23 @@ import { useState, useEffect } from "react";
 export default function () {
 	const [title, setTitle] = useState("");
 	const [titles, setTitles] = useState([]);
+	const [list, setList] = useState("");
+	const data = [{ "type": "heading 1", "shortcut": "shortcut: type # + space" }, { "type": "expandable heading 1", "shortcut": "shortcut: type >># + space" }]
 
+
+	const filterData = (e) => {
+		setTitle(e.target.value)
+		const result = data.filter((val) => {
+
+			const fil = e.target.value.length == 0 ? "" : e.target.value.substr(1, e.target.value.length - 1);
+			console.log(fil);
+			if (fil === "") return "";
+			return val.type.toLowerCase().includes(fil.toLowerCase())
+		})
+		setList(result)
+
+
+	}
 	const saveTitle = (e) => {
 		if (e.key == "Enter") {
 			if (title.length > 0) {
@@ -45,6 +61,7 @@ export default function () {
 		const checkout = JSON.parse(localStorage.getItem("headings"));
 		setTitles(checkout);
 	}, []);
+
 
 	return (
 		<div>
@@ -85,9 +102,10 @@ export default function () {
 					<input
 						placeholder="Heading 1"
 						value={title}
-						onChange={(e) => setTitle(e.target.value)}
+						onChange={(e) => filterData(e)}
 						onKeyDown={(e) => saveTitle(e)}
 					></input>
+					<Card data={list} />
 				</div>
 			</div>
 		</div>
