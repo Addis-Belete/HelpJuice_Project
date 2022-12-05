@@ -10,7 +10,7 @@ export default function () {
 	const [filLen, setFillen] = useState(0);
 	const data = [{ "type": "heading 1", "shortcut": "shortcut: type # + space" }, { "type": "expandable heading 1", "shortcut": "shortcut: type >># + space" }]
 
-
+	// Filters data based on user input
 	const filterData = (e) => {
 		setTitle(e.target.value)
 		const result = data.filter((val) => {
@@ -23,6 +23,7 @@ export default function () {
 		setList(result)
 
 	}
+	// This function saves the title to localstorage
 	const saveTitle = (e) => {
 		if (e.key == "Enter") {
 			if (title.length > 0) {
@@ -46,6 +47,7 @@ export default function () {
 		}
 	};
 
+	// Removes headings from the local storage
 	const remove = (index) => {
 		let titles = JSON.parse(localStorage.getItem("headings"));
 		const removed = titles[index];
