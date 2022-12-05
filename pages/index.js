@@ -7,6 +7,7 @@ export default function () {
 	const [title, setTitle] = useState("");
 	const [titles, setTitles] = useState([]);
 	const [list, setList] = useState("");
+	const [filLen, setFillen] = useState(0);
 	const data = [{ "type": "heading 1", "shortcut": "shortcut: type # + space" }, { "type": "expandable heading 1", "shortcut": "shortcut: type >># + space" }]
 
 
@@ -15,12 +16,11 @@ export default function () {
 		const result = data.filter((val) => {
 
 			const fil = e.target.value.length == 0 ? "" : e.target.value.substr(1, e.target.value.length - 1);
-			console.log(fil);
+			setFillen(fil.length);
 			if (fil === "") return "";
 			return val.type.toLowerCase().includes(fil.toLowerCase())
 		})
 		setList(result)
-
 
 	}
 	const saveTitle = (e) => {
@@ -105,7 +105,7 @@ export default function () {
 						onChange={(e) => filterData(e)}
 						onKeyDown={(e) => saveTitle(e)}
 					></input>
-					<Card data={list} />
+					<Card data={list} len={filLen} />
 				</div>
 			</div>
 		</div>

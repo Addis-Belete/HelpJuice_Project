@@ -1,5 +1,5 @@
 import styles from "../../styles/Card.module.css";
-export default function Card({ data }) {
+export default function Card({ data, len }) {
 	return (
 		<div
 			className={styles.card}
@@ -14,7 +14,7 @@ export default function Card({ data }) {
 					</h5>
 					<span>Keep typing to filter, or escape to exit</span>
 					<p>
-						filtering keyword<span>1</span>
+						filtering keyword<span>{len}</span>
 					</p>
 				</div>
 			)}
