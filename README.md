@@ -1,22 +1,12 @@
 # Frontend Test Project
 
 > Is a project that changes any text to Heading 1. 
-![screenshot](./assets/home_page.png)
-![screenshot](./assets/menu_page.png)
-![screenshot](./assets/contact_page.png)
+![screenshot](pages/assets/page.png)
 
-Additional description about the project and its features.
 
-## Built With
+## Deployed to
 
-- JavaScript
-- Webpack
-- Css3
-- Dom manipulations
-
-## Live Demo
-
-[Live Demo Link](https://mystifying-knuth-91d732.netlify.app)
+[Link](https://amazing-kleicha-18958a.netlify.app/)
 
 ## Built With
 
