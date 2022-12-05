@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Test Project
+
+> Is a project that changes any text to Heading 1. 
+
+## Built With
+
+- JavaScript
+- Nextjs
+- CSS module
+- HTML5
+- Jest
+- Font awesome
+- localstorage
+
+## Install
+
+```
+$ npm install
+
+```
 
 ## Getting Started
 
-First, run the development server:
+## To get local copy up and running follow these simple example steps
 
-```bash
-npm run dev
-# or
-yarn dev
+```
+- git clone git@github.com:Addis-Belete/HelpJuice_Project.git
+- run npm install
+- run npm run dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instruction 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+- To convert to Heading 1 please type "/1" first. Then type any text. 
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## Test
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+- npm run test 
+```
 
-## Learn More
+👤 **Addis Belete**
 
-To learn more about Next.js, take a look at the following resources:
+- GitHub: [@Addis0943](https://github.com/Addis0943)
+- Twitter: [@Addis32018084](https://twitter.com/Addis32018084)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/addis-belete-134b98191/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🤝 Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions, issues, and feature requests are welcome!
 
-## Deploy on Vercel
+Feel free to check the [issues page](../../issues/).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Show your support
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
+
+```
+
+```
