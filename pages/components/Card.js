@@ -1,5 +1,5 @@
 import styles from "../../styles/Card.module.css";
-export default function Card({ data, len }) {
+export default function Card({ data = [], len }) {
 	return (
 		<div
 			className={styles.card}
